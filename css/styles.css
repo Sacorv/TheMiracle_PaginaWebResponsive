@@ -1,0 +1,688 @@
+*{
+    box-sizing: border-box;
+    padding: 0;
+    margin: 0;
+}
+body{
+    font-family: 'Open Sans', sans-serif;
+    font-family: 'Prociono', serif;
+    font-family: 'Source Serif Pro', serif;
+}
+.contenedor{
+    width: 100%;
+    max-width: 1170px;
+    margin: auto;
+}
+
+/* ENCABEZADO */
+.promo-top p{
+    text-align: center;
+    font-size: 14px;
+    background-color: #654062;
+    color: #ffffff;
+    padding: 8px 0;
+    letter-spacing: 0.5px;
+}
+.logo-carrito{
+    display: flex;
+    flex-flow: row nowrap;
+    width: 100%;
+    justify-content: center;
+    margin-top: 25px;
+}
+.logo img{
+    width: 240px;
+}
+.carrito img{
+    display: inline-block;
+    width: 16px;
+    margin: 25px 3px;
+}
+
+.menu{
+    display: flex;
+    flex-flow: row nowrap;
+    justify-content: space-between;
+    width: 100%;
+    max-width: 430px;
+    margin: auto;
+    margin-top: 12px;
+    padding: 0 4px;
+}
+.menu a{
+    text-decoration: none;
+    font-size: 15px;
+    color: #654062;
+}
+
+.carrito img:hover{
+   transform: scale(1.3, 1.3);
+   transition: all 0.2s ease-out;
+}
+
+.menu a:hover{
+    color: #efbbcf;
+}
+.menu a:active{
+    color: #cc0e74;
+}
+
+/* FIN ENCABEZADO */
+
+/* BANNER PRINCIPAL */
+.banner{
+    width: auto;
+    height: 550px;
+    background-image: url(../img/banner-ppalOK.jpg);
+    background-size: cover;
+    background-repeat: no-repeat;
+    background-position: center;
+}
+.banner .shadow{
+    width: 100%;
+    height: 100%;
+    background-color: rgba(0, 0, 0, 0.3);
+}
+.banner .contenedor{
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    justify-content: center;
+    height: 100%;
+    margin-top: 20px;
+}
+.banner p{
+    color: #ffffff;
+    font-size: 25px;
+    margin-bottom: 25px;
+}
+.banner h2{
+    color: #ffffff;
+    font-size: 45px;
+    background-color: rgba(255, 255, 255, 0.3);
+    padding: 45px 0;
+    width: 100%;
+    max-width: 470px;
+    text-align: center;
+    margin-bottom: 32px;
+}
+.banner a{
+    color: #ffffff;
+    text-decoration: none;
+    font-size: 35px;
+    background-color: rgba(227, 85, 173, 0.3);
+    padding: 15px 0;
+    width: 100%;
+    max-width: 190px;
+    text-align: center;
+}
+
+.banner a:hover{
+    border-radius: 28px;
+    transform: scale(1.1, 1.1);
+    transition: all 0.2s ease-in-out;
+}
+.banner a:active{
+    background-color: rgba(97, 74, 89, 0.5);
+    transition: all 0.2s ease-in-out;
+}
+/* FIN BANNER PRINCIPAL */
+
+/* GALERIA DE FOTOS */
+.galeria h3{
+    font-size: 34px;
+    text-align: center;
+    color: #654062;
+    text-transform: uppercase;
+    margin: 50px 0;
+    letter-spacing: 2px;
+}
+.fotos{
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+ }
+.fotos img{
+    width: 100%;
+    max-width: 350px;
+    margin-bottom: 8px;
+}
+.fotos a{
+    text-decoration: none;
+    color: #654062;
+    text-align: center;
+    font-size: 18px;
+}
+.fotos p{
+    height: auto;
+    width: 100%;
+    max-width: 400px;
+    margin: auto;
+}
+.fotos div{
+    margin-bottom: 25px;
+}
+
+.fotos >div:hover{
+    transform: scale(1.02, 1.02);
+    box-shadow: 10px 12px 10px #f5efef;
+    transition: all 0.2s linear;
+}
+/* FIN GALERIA DE FOTOS */
+
+/* FOOTER */
+.top-footer{
+    background-color: #654062;
+    color: #ffffff;
+    font-size: 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    justify-content: center;
+    width: 100%;
+    padding: 18px 10px;
+}
+.top-footer label{
+    margin-bottom: 10px;
+}
+.top-footer .email{
+    font-size: 14px;
+    width: 100%;
+    max-width: 300px;
+    text-align: start;
+    padding: 5px; 
+    margin-bottom: 10px;
+}
+.email:focus{
+    outline: 0;
+}
+.top-footer .boton{
+    font-size: 16px;
+    padding: 10px 0;
+    width: 100%;
+    max-width: 140px;
+    color: #654062;
+    cursor: pointer;
+    border-radius: 4px;
+    outline: none;
+    border: none;
+}
+
+.boton:hover{
+    transform: translate(0, -3px);
+    transition: all 0.16s linear;
+}
+.boton:active{
+    color: #ffffff;
+    border: 1px solid #ffffff;
+    background-color: #654062;
+}
+
+.center-footer {
+    background-color: #faf2f2;
+}
+.center-footer .contenedor{
+    color:  #654062;
+    display: flex;
+    flex-flow: row wrap;
+    justify-content: center;
+    align-items: center;
+    padding: 30px 0;
+    
+}
+.center-footer a{
+    text-decoration: none;
+    color:  #654062;
+    font-size: 15px;
+}
+.redes, .empresa, .reventa{
+    margin: 15px 20px;
+    display: flex;
+    flex-flow: column nowrap;
+    align-items: center;
+    padding: 8px 0;
+}
+
+.redes p{
+    font-size: 15px;
+}
+.redes h4, .empresa h4, .reventa h4{
+    margin-bottom: 5px;
+    font-size: 18.5px;
+}
+.iconos img{
+    width: 35px;
+    margin: 0 7px;
+    margin-top: 15px;
+}
+
+
+.empresa a, .reventa a{
+    padding: 5px 0;
+    font-size: 15px;
+}
+
+.bottom-footer{
+    background-color: #654062;
+    color: #ffffff;
+    display: flex;
+    flex-flow: column wrap;
+    align-items: center;
+    padding: 12px 0;
+    font-size: 12px;
+    width: 100%;
+}
+.bottom-footer a{
+    color: #ffffff;
+    text-decoration: none;
+    margin-top: 8px;
+}
+
+
+.iconos img:hover{
+    transform: scale(1.2, 1.2);
+    box-shadow: 3px 5px 20px #bbbbbb;
+    border-radius: 30px;
+    transition: all 0.09s linear;
+}
+
+.empresa a:hover, .reventa a:hover{
+    border-bottom: 1px solid #654062;
+    padding-bottom: 4px;
+}
+.bottom-footer a:hover{
+    color: #ea97ad;
+ }
+
+/* FIN DE FOOTER */
+
+
+
+@media all and (min-width: 768px) and (max-width: 889px){
+    .promo-top p{
+        font-size: 16px;
+        letter-spacing: 1px;
+        padding: 10px 0;
+    }
+    .logo-carrito{
+        justify-content: flex-end;
+    }
+    .logo img{
+        width: 320px;
+        margin-right: 175px;
+    }
+    .carrito{
+        padding-right: 15px;
+    }
+    .carrito img{
+        width: 22px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+    }
+    .menu{
+        max-width: 630px;
+    }
+    .menu a{
+        font-size: 18px;
+        padding: 0 20px;
+    }
+  
+  
+    .banner p{
+       font-size: 26.5px;
+   }
+    .banner h2{
+       max-width: 560px;
+       font-size: 50px;
+       letter-spacing: 0.5px;
+   }
+   
+   
+    .galeria h3{
+        font-size: 36px;
+        letter-spacing: 5px;
+    }
+    .fotos img{
+        margin-left: 20px;
+        margin-right: 20px;
+        max-width: 380px;
+    }
+    .fotos .img1{
+        order: 1;
+    }
+    .fotos .img2, .img3{
+        order: 3;
+    }
+    .fotos .img4{
+        order: 2;
+    }
+
+
+    .top-footer{
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .top-footer label, .email{
+        margin-bottom: 0;
+        padding: 0;
+        margin-right: 10px;
+    }
+    .top-footer .email{
+        padding: 4px;
+        margin-top: 10px;
+    }
+    .redes, .empresa{
+        border-right: 1px solid #654062;
+        padding-right: 35px;
+    } 
+    .empresa{
+      padding-top: 15px;
+      padding-bottom: 15px;
+    }
+    .bottom-footer{
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 14px;
+        letter-spacing: 0.2px;
+    }
+    .bottom-footer a{
+        margin-top: 0;
+        margin-left: 25px;
+        border-left: 1px solid #ffffff;
+        padding-left: 20px;
+    }
+}
+@media all and (min-width:890px) and (max-width:1119px){
+    .promo-top p{
+        font-size: 18.5px;
+        letter-spacing: 1.5px;
+    }
+    .logo-carrito{
+        justify-content: flex-end;
+    }
+    .logo img{
+        width: 430px;
+        margin-right: 175px;
+    }
+    .carrito{
+        padding-right: 10px;
+    }
+    .carrito img{
+        width: 28px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+    .menu{
+        max-width: 670px;
+    }
+    .menu a{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+
+    .banner p{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+     .banner h2{
+        max-width: 630px;
+        font-size: 50px;
+        letter-spacing: 0.5px;
+        padding: 50px 0;
+    }
+    .banner a{
+        font-size: 38.5px;
+        padding: 18px 0;
+        max-width: 250px;
+        text-align: center;
+        background-color: rgba(227, 85, 173, 0.3);
+    }
+
+
+    .galeria h3{
+        font-size: 50px;
+        letter-spacing: 6.5px;
+    }
+    .fotos img{
+        margin: 0 15px;
+        max-width: 540px;
+    }
+    .fotos .img1{
+        order: 1;
+    }
+    .fotos .img2, .img3{
+        order: 3;
+    }
+    .fotos .img4{
+        order: 2;
+    }
+    .fotos h4, p{
+        font-size: 20px;
+    }
+
+
+
+    .top-footer{
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .top-footer label, .email{
+        margin-bottom: 0;
+        padding: 0;
+        margin-right: 15px;
+    }
+    .top-footer label{
+        font-size: 30px;
+    }
+    .top-footer .email{
+        padding: 6px 0;
+        margin-top: 10px;
+        max-width: 320px;
+    }
+    .top-footer .boton{
+        font-size: 20px;
+        padding: 12.5px 0;
+        max-width: 165px;
+    }
+
+    
+    .center-footer .contenedor{
+        padding: 45px 0;
+       
+    }
+    .redes, .empresa{
+        border-right: 1px solid #654062;
+        
+    } 
+    .redes, .empresa, .reventa{
+        padding-right: 80px;
+        padding-left: 50px; 
+    }
+    .redes h4, .empresa h4, .reventa h4{
+        font-size: 21.5px;
+    }
+    .redes p, .empresa a, .reventa a{
+        font-size: 17.5px;
+    }
+    .redes p{
+        font-size: 18.5px;
+    }
+    .iconos img{
+        width: 48px;
+    }
+
+    .reventa{
+        padding-right: 20px;
+    }
+    .empresa{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .bottom-footer{
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+    }
+    .bottom-footer a{
+        margin-top: 0;
+        margin-left: 25px;
+        border-left: 1px solid #ffffff;
+        padding-left: 20px;
+    }
+    .bottom-footer p{
+        font-size: 15px;
+    }
+}
+@media all and (min-width: 1120px){
+    .promo-top p{
+        font-size: 18.5px;
+        letter-spacing: 1.5px;
+    }
+    .logo-carrito{
+        justify-content: flex-end;
+    }
+    .logo img{
+        width: 430px;
+        margin-right: 275px;
+    }
+    .carrito{
+        padding-right: 10px;
+    }
+    .carrito img{
+        width: 28px;
+        margin-top: 30px;
+        margin-bottom: 20px;
+        margin-right: 15px;
+    }
+    .menu{
+        max-width: 670px;
+    }
+    .menu a{
+        font-size: 20px;
+        padding: 0 10px;
+    }
+
+
+    .banner p{
+        font-size: 30px;
+        letter-spacing: 1px;
+    }
+     .banner h2{
+        max-width: 630px;
+        font-size: 50px;
+        letter-spacing: 0.5px;
+        padding: 50px 0;
+    }
+    .banner a{
+        font-size: 38.5px;
+        padding: 18px 0;
+        max-width: 250px;
+        text-align: center;
+        background-color: rgba(227, 85, 173, 0.3);
+    }
+
+
+    .galeria h3{
+        font-size: 50px;
+        letter-spacing: 6.5px;
+    }
+    .fotos img{
+        margin: 0 15px;
+        max-width: 540px;
+    }
+    .fotos .img1{
+        order: 1;
+    }
+    .fotos .img2, .img3{
+        order: 3;
+    }
+    .fotos .img4{
+        order: 2;
+    }
+    .fotos h4, p{
+        font-size: 20px;
+    }
+
+
+
+    .top-footer{
+        flex-flow: row nowrap;
+        align-items: center;
+    }
+    .top-footer label, .email{
+        margin-bottom: 0;
+        padding: 0;
+        margin-right: 15px;
+    }
+    .top-footer label{
+        font-size: 30px;
+    }
+    .top-footer .email{
+        padding: 6px 0;
+        margin-top: 10px;
+        max-width: 320px;
+    }
+    .top-footer .boton{
+        font-size: 20px;
+        padding: 12.5px 0;
+        max-width: 165px;
+    }
+
+    
+    .center-footer .contenedor{
+        padding: 45px 0;
+       
+    }
+    .redes, .empresa{
+        border-right: 1px solid #654062;
+        
+    } 
+    .redes, .empresa, .reventa{
+        padding-right: 80px;
+        padding-left: 50px; 
+    }
+    .redes h4, .empresa h4, .reventa h4{
+        font-size: 21.5px;
+    }
+    .redes p, .empresa a, .reventa a{
+        font-size: 17.5px;
+    }
+    .redes p{
+        font-size: 18.5px;
+    }
+    .iconos img{
+        width: 48px;
+    }
+
+    .reventa{
+        padding-right: 20px;
+    }
+    .empresa{
+      padding-top: 20px;
+      padding-bottom: 20px;
+    }
+    
+    .bottom-footer{
+        flex-flow: row nowrap;
+        justify-content: center;
+        align-items: center;
+        font-size: 15px;
+        letter-spacing: 0.2px;
+    }
+    .bottom-footer a{
+        margin-top: 0;
+        margin-left: 25px;
+        border-left: 1px solid #ffffff;
+        padding-left: 20px;
+    }
+    .bottom-footer p{
+        font-size: 15px;
+    }
+   
+}
